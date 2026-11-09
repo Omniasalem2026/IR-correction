@@ -1,5 +1,7 @@
 # IR correction
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24082268.svg)](https://doi.org/10.5281/zenodo.24082268)
+
 A simple desktop program that applies **IR (ohmic) correction** to potential-current data from an Excel or CSV file, and optionally calculates the **Tafel slope** from the IR-corrected data.
 
 Developed by **Omnia M. Salem**.
@@ -10,15 +12,15 @@ Developed by **Omnia M. Salem**.
 IR drop = i x Rs
 ```
 
-|Measurement|IR-corrected potential|
-|-|-|
-|Applied potential (CV, LSV)|`E\_corrected = E\_measured - i x Rs`|
-|Fuel cell discharge (e.g. DMFC)|`E\_corrected = E\_measured + i x Rs`|
+| Measurement | IR-corrected potential |
+|---|---|
+| Applied potential (CV, LSV) | `E_corrected = E_measured - i x Rs` |
+| Fuel cell discharge (e.g. DMFC) | `E_corrected = E_measured + i x Rs` |
 
-* `i` = current in amperes (if you enter current density `j`, then `i = j x A`, where `A` is the active area in cm2)
-* `Rs` = ohmic resistance from EIS (high-frequency intercept on the Nyquist plot)
-* Use **Rs only, not Rct**.
-* IR correction changes the **potential**, not the current.
+- `i` = current in amperes (if you enter current density `j`, then `i = j x A`, where `A` is the active area in cm2)
+- `Rs` = ohmic resistance from EIS (high-frequency intercept on the Nyquist plot)
+- Use **Rs only, not Rct**.
+- IR correction changes the **potential**, not the current.
 
 ## Download (Windows)
 
@@ -42,7 +44,7 @@ certutil -hashfile "IR correction.exe" SHA256
 
 ```
 pip install -r requirements.txt
-python IR\_GUI.py
+python IR_GUI.py
 ```
 
 ## How to use
@@ -58,18 +60,15 @@ The saved Excel file contains your original columns plus `i (A)`, `j (mA/cm2)`, 
 
 ## Notes
 
-* Anodic current should be positive in your file. Cathodic (negative) current is also supported.
-* For a CV, use the forward scan for the Tafel fit (default).
-* Choose a Tafel window that is linear on the Tafel plot and spans at least one decade of current.
-* Always check the results against a manual calculation for your own data.
+- Anodic current should be positive in your file. Cathodic (negative) current is also supported.
+- For a CV, use the forward scan for the Tafel fit (default).
+- Choose a Tafel window that is linear on the Tafel plot and spans at least one decade of current.
+- Always check the results against a manual calculation for your own data.
 
 ## Citation
 
-> Salem, O. M. (2026). \*IR correction\* (Version 1.0) \[Computer software]. https://doi.org/xx.xxxx/zenodo.xxxxxxx
-
-(Replace the DOI after publishing a release on Zenodo.)
+> Salem, O. M. (2026). *IR correction* (Version 1.0.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.24082268
 
 ## License
 
 See the `LICENSE` file.
-
