@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "IR correction"
+type: software
+version: "1.0.0"
+date-released: "2026-11-08"
+license: MIT
+author:
+  - First name: "Omnia"
+    Last name: "M. Salem"
+repository-code: "https://github.com/Omniasalem2026/IR-correction"
+abstract: "A simple desktop program for IR (ohmic) correction of potential-current data and Tafel slope calculation from Excel/CSV files."
+keywords:
+  - IR correction
+  - iR drop
+  - Tafel slope
+  - electrochemistry
+# After Zenodo gives you the DOI, add this line (without the #) and commit:
+# doi: "10.5281/zenodo.XXXXXXX"
